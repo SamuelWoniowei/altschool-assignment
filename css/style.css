@@ -1,0 +1,408 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  padding: 0 5em;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding: 1.5em;
+  z-index: 1000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.1em;
+  background-color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+}
+
+nav a {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 0.1em;
+  text-decoration-color: #000000;
+  color: #222121;
+}
+
+nav a:hover,
+footer a:hover {
+  text-decoration: none;
+}
+
+#home {
+  font-size: 1.3em;
+  color: black;
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+#welcome {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+#welcome div {
+  width: 60%;
+}
+
+#welcome h1 {
+  font-weight: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12em;
+  text-shadow: 1px 2px 3px #333;
+}
+
+p {
+  color: #333;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.scroll {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 0.6em 2em;
+  text-decoration: none;
+  border-radius: 10px;
+}
+#welcome p {
+  align-self: self-end;
+  line-height: 1.6em;
+  font-size: 1.3em;
+  margin-top: 1.5em;
+}
+#about {
+  height: 85vh;
+}
+#about h2 {
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: 0.3em;
+  margin-top: 1em;
+  text-shadow: 1px 1px 2px #333;
+}
+
+#about p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
+.scroll {
+  margin: 2em 0;
+}
+
+footer {
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+}
+footer a {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 0.1em;
+  text-decoration-color: #000000;
+  color: #222121;
+  font-size: 1.2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* styling for table.html starts here */
+
+#courses-intro {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 2em 0;
+  line-height: 1.6em;
+}
+
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-table th,
+.course-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.course-table th {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.course-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* styling for form.html starts here */
+#join-body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+  gap: 3em;
+}
+#form-body {
+  border-radius: 5px;
+  width: 54% !important;
+}
+#form-body h2 {
+  font-weight: normal;
+}
+
+#join-body img {
+  width: 100%;
+}
+
+#form-body > p {
+  font-size: 1.2em !important;
+  text-align: left !important;
+  margin-top: 0.7em;
+  color: gray !important;
+}
+
+form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 2em;
+}
+
+#join-body > div > p {
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+#join-body > div {
+  width: 40%;
+}
+
+.two-column {
+  display: flex;
+  gap: 3em;
+  margin-bottom: 1em;
+}
+.two-column div {
+  width: 44%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 1.2em;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+  background-color: #357ab8;
+}
+select {
+  background-color: #fafafa;
+  width: 100%;
+  color: #333;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#hearAbout {
+  width: 100%;
+}
+
+#hearAboutLabel {
+  margin: 1.5em 0;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 2em;
+  }
+  #home {
+    font-size: 2em;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+
+  nav ul {
+    margin-top: 1em;
+    gap: 1em;
+  }
+  #welcome div {
+    width: 100%;
+  }
+  #welcome h1 {
+    font-size: 8em;
+  }
+
+  #welcome p {
+    font-size: 1.4em;
+  }
+  #about {
+    height: 0;
+  }
+  #about h2 {
+    font-size: 2.5em;
+  }
+
+  #about p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+  }
+
+  footer a {
+    font-size: 1em;
+  }
+  .scroll {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .hide {
+    display: block;
+  }
+
+  footer {
+    display: none;
+  }
+  /* styling for table.html starts here */
+
+  #courses-intro {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0.5em 2em;
+  }
+  #home {
+    font-size: 1.5em;
+  }
+  nav {
+    flex-direction: column;
+    padding: 0.5em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 1em;
+    text-align: center;
+  }
+  nav a {
+    text-decoration: none;
+  }
+  #welcome div {
+    width: 100%;
+  }
+  #welcome h1 {
+    font-size: 5em;
+    margin-top: -0.5em;
+    text-shadow: none;
+  }
+
+  #welcome p {
+    font-size: 1em;
+  }
+  #about {
+    height: 0;
+  }
+  #about h2 {
+    font-size: 2em;
+  }
+
+  #about p {
+    font-size: 0.9em;
+  }
+
+  .scroll {
+    margin-top: 1em;
+    margin-bottom: 4em;
+    padding: 0.4em 1.5em;
+  }
+  /* styling for table.html starts here */
+
+  #courses-intro {
+    font-size: 1em;
+  }
+
+
+/* styling for form.html starts here */
+#join-body {
+  flex-direction: column;
+  gap: 1em;
+}
+#join-body > div {
+  width: 100%;
+}
+#join-body > div > p {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+.two-column {
+  flex-direction: column;
+  gap: 3em;
+  margin-bottom: 1em;
+}
+.two-column div {
+  width: 100%;
+}
+#form-body {
+  border-radius: 5px;
+  width: 100% !important;
+}
+}

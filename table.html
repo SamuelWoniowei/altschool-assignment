@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Altschool courses</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-    <a href="index.html">Go back to my Journey</a> or  <a href="form.html">Join now</a><br><br>
-    <table  cellspacing="20" cellpadding="10">
+<body>
+    <nav>
+        <a id="home" href="#">My AltSchool Journey</a>
+
+        <ul>
+            <li><a href="index.html">My Journey</a></li>
+            <li><a href="media.html">My AltSchool Media</a></li>
+            <li><a href="form.html">Join AltSchool</a></li>
+        </ul>
+
+    </nav>
+    <p id="courses-intro">
+        Welcome to the heart of learning at AltSchool! Here, you’ll find a comprehensive overview of the diverse courses
+        available, each designed to ignite your passion for technology and creativity. Whether you’re interested in
+        diving into the dynamic world of Frontend and Backend development at the School of Engineering (SOE) or
+        exploring the artistic realms of Design and Marketing at the School of Design (SOD), this page serves as your
+        gateway to an exciting educational journey. Each course is meticulously crafted to equip you with the skills and
+        knowledge needed to thrive in today’s fast-paced tech landscape.
+    </p>
+    <table class="course-table" cellspacing="20" cellpadding="10">
         <thead>
             <tr>
-                <td>School</td>
-                <td>Courses</td>
+                <th>School</th>
+                <th>Courses</th>
+                <th></th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -26,9 +47,11 @@
                 <td>SOD</td>
                 <td>Design</td>
                 <td>Marketing</td>
-                <td>Marketing</td>
+                <td>Sales</td>
             </tr>
         </tbody>
     </table>
+
 </body>
+
 </html>

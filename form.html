@@ -5,61 +5,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get started</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <a href="index.html">Go back to my Journey</a><br><br>
-    <form >
-        <label for="firstName">First Name:</label><br>
-        <input type="text" id="firstName" name="firstName" required><br><br>
+    <nav>
+        <a id="home" href="#">My AltSchool Journey</a>
 
-        <label for="lastName">Last Name:</label><br>
-        <input type="text" id="lastName" name="lastName" required><br><br>
+        <ul>
+            <li><a href="index.html">My Journey</a></li>
+            <li><a href="media.html">My AltSchool Media</a></li>
+            <li><a href="table.html">Available courses</a></li>
+        </ul>
 
-        <label for="gender">Gender:</label><br>
-        <select id="gender" name="gender" required>
-            <option value="">Select gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select><br><br>
+    </nav>
+    <main id="join-body">
+        <div>
+            <img src="https://portal.altschoolafrica.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Ftalentql-inc%2Fimage%2Fupload%2Fv1703728439%2Fstudent-portal%2Facademic_zzg4hi.png&w=640&q=75"
+                alt="altschool signup">
+            <p>Learn highly sought
+                after skills without
+                hassle.</p>
+        </div>
+        <div id="form-body">
+            <h2>Signup</h2>
+            <p>Take the next steps to apply at AltSchool Africa</p>
+            <form>
+                <div class="two-column">
+                    <div>
+                        <label for="firstName">First Name:</label><br>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name:</label><br>
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                    </div>
+                </div>
 
-        <label for="dob">Date of Birth:</label><br>
-        <input type="date" id="dob" name="dob" placeholder="dd/mm/yyyy" required><br><br>
+                <div class="two-column">
+                    <div>
+                        <label for="gender">Gender:</label><br>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select><br><br>
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth:</label><br>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                </div>
 
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+                <div class="two-column">
+                    <div>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address"
+                            required><br><br>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+                            required><br><br>
+                    </div>
+                </div>
+                <div class="two-column">
+                    <div>
+                        <label for="country">Country:</label><br>
+                        <select id="country" name="country" required>
+                            <option value="">Select your country</option>
+                            <option value="country1">Nigeria</option>
+                            <option value="country2">Ghana</option>
+                            <option value="country3">Kenya</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="city">State/City of Residence:</label><br>
+                        <input type="text" id="city" name="city" placeholder="Enter your city or state"
+                            required><br><br>
+                    </div>
+                </div>
 
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone" required><br><br>
+                <div id="hearAboutLabel">
+                    <label for="hearAbout">How did you hear about us?</label><br>
+                    <select id="hearAbout" name="hearAbout" required>
+                        <option value="">Select channel</option>
+                        <option value="online">Online Advertisement</option>
+                        <option value="friend">From a Friend</option>
+                        <option value="social">Social Media</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-        <label for="country">Country:</label><br>
-        <select id="country" name="country" required>
-            <option value="">Select your country</option>
-            <option value="country1">Nigeria</option>
-            <option value="country2">Ghana</option>
-            <option value="country3">Kenya</option>
-        </select><br><br>
+                <div class="two-column">
+                    <div>
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div>
+                        <label for="confirmPassword">Confirm Password:</label><br>
+                        <input type="password" id="confirmPassword" name="confirmPassword"
+                            placeholder="Re-enter your password" required>
+                    </div>
+                </div>
 
-        <label for="city">State/City of Residence:</label><br>
-        <input type="text" id="city" name="city" required><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
 
-        <label for="hearAbout">How did you hear about us?</label><br>
-        <select id="hearAbout" name="hearAbout" required>
-            <option value="">Select channel</option>
-            <option value="online">Online Advertisement</option>
-            <option value="friend">From a Friend</option>
-            <option value="social">Social Media</option>
-            <option value="other">Other</option>
-        </select><br><br>
-
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <label for="confirmPassword">Confirm Password:</label><br>
-        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
 </body>
 
 </html>

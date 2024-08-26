@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+
+<body>
+    <h1>These page shows all the media elements available in html</h1>
+
+    <h2>The Picture Element</h2>
+
+    <picture>
+        <source media="(max-width: 600px)" srcset="images/mobile.png">
+        <source media="(max-width: 900px)" srcset="images/tablet.png">
+        <source media="(min-width: 1101px)" srcset="images/main-image.png">
+        <img src="images/main-image.png" alt="Altschool assignment images">
+    </picture>
+
+    <!-- <img 
+    src="images/desktop.png" 
+    srcset="images/mobile.png 600w, 
+            images/tablet.png 800w, 
+            images/desktop.png 1200w, 
+            images/desktop.png 1201w" 
+    sizes="(max-width: 600px) 100vw, 
+           (min-width: 601px) and (max-width: 800px) 100vw, 
+           (min-width: 801px) and (max-width: 1200px) 100vw, 
+           (min-width: 1201px) 100vw" 
+    alt="Altschool assignment images"> -->
+   
+
+
+    <h2>The Video Element</h2>
+
+    <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>The Audio Element</h2>
+    <audio controls>
+        <source src="https://sample-videos.com/audio/mp3/crowd-cheering.mp3" type="audio/mpeg">
+        <source src="https://sample-videos.com/audio/ogg/crowd-cheering.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+  <br> <br>    
+
+
+
+</body>
+
+</html>
