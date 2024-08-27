@@ -4,53 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media</title>
-</head>
+    <title>My AltSchool Media</title>
+    <link rel="stylesheet" href="css/style.css">
 
 <body>
-    <h1>These page shows all the media elements available in html</h1>
+    <nav>
+        <a id="home" href="#">My AltSchool Journey</a>
 
-    <h2>The Picture Element</h2>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="table.html">Available courses</a></li>
+            <li><a href="form.html">Join AltSchool</a></li>
+            <li class="hide"><a href="media.html">My AltSchool Media</a></li>
+        </ul>
 
-    <picture>
-        <source media="(max-width: 600px)" srcset="images/mobile.png">
-        <source media="(max-width: 900px)" srcset="images/tablet.png">
-        <source media="(min-width: 1101px)" srcset="images/main-image.png">
-        <img src="images/main-image.png" alt="Altschool assignment images">
-    </picture>
+    </nav>
 
-    <!-- <img 
-    src="images/desktop.png" 
-    srcset="images/mobile.png 600w, 
-            images/tablet.png 800w, 
-            images/desktop.png 1200w, 
-            images/desktop.png 1201w" 
-    sizes="(max-width: 600px) 100vw, 
-           (min-width: 601px) and (max-width: 800px) 100vw, 
-           (min-width: 801px) and (max-width: 1200px) 100vw, 
-           (min-width: 1201px) 100vw" 
-    alt="Altschool assignment images"> -->
-   
+    <main id="media-main">
+        <section class="media-container">
+            <h2 class="section-title">Responsive Imagery</h2>
+            <picture class="responsive-picture">
+                <source
+                    srcset="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+                    media="(max-width: 600px)">
+                <source
+                    srcset="https://img.freepik.com/free-photo/admin-apartment-exasperated-by-annoying-bugs-while-programming_482257-92992.jpg?t=st=1724758241~exp=1724761841~hmac=e36fe691bc494d172a7af69cff625f7b5fa2cf821ba768a800cff3690812e8cf&w=1060"
+                    media="(max-width: 1200px)">
+                <img id="main-media"
+                    src="https://img.freepik.com/free-photo/high-angle-kid-cheating-school-test_23-2150105086.jpg?t=st=1724757928~exp=1724761528~hmac=e1880da1b480f89b9c42266d911ff6ec8695bcb0e25d07bcbd6929c35b6f35bf&w=1060"
+                    alt="A random beautiful scene">
+            </picture>
+            <figcaption>A powerful visual representation of my journey.</figcaption>
+        </section>
+
+        <section class="media-container">
+            <h2 class="section-title">Audio Reflection</h2>
+            <audio controls>
+                <source src="media/aud.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <figcaption>How excited I am for next semester.</figcaption>
+        </section>
+
+        <section class="media-container">
+            <h2 class="section-title">Video Experience</h2>
+            <video controls>
+                <source src="https://cdn.pixabay.com/video/2023/10/20/185808-876514119_large.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <figcaption>A short video capturing my AltSchool experience.</figcaption>
+        </section>
 
 
-    <h2>The Video Element</h2>
+        <section class="media-container">
+            <h2 class="section-title">Quotes & Inspirations</h2>
+            <blockquote class="quote">
+                "The only limit to our realization of tomorrow is our doubts of today."
+            </blockquote>
+            <figcaption>A quote that has guided my journey.</figcaption>
+        </section>
+    </main>
 
-    <video controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-    </video>
-
-    <h2>The Audio Element</h2>
-    <audio controls>
-        <source src="https://sample-videos.com/audio/mp3/crowd-cheering.mp3" type="audio/mpeg">
-        <source src="https://sample-videos.com/audio/ogg/crowd-cheering.ogg" type="audio/ogg">
-        Your browser does not support the audio element.
-      </audio>
-  <br> <br>    
-
-
-
+    <footer>
+        <ul>
+            <li class="left-border"><a href="form.html">Join AltSchool</a></li>
+            <li class="left-border"><a href="table.html">AltSchool Courses</a></li>
+            <li class="left-border"><a href="media.html">My altschool media</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
